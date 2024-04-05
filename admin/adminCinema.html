@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/adminStyle.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <a href="../admin/adminHome.html">Home</a>
+        <a href="../admin/adminUser.html">Admin Register</a>
+        <a href="../admin/adminCinema.html">Cinema</a>
+        <a href="../admin/adminMovie.html">Movie</a>
+        <a href="../admin/adminTime.html">Time</a>
+        <a href="../admin/adminSheet.html">Seat</a>
+
+    </div>
+
+    <div id="cinema-content" class="content">
+        <div class="form card">
+            <div class="card-header">Cinema Form</div>
+            <div class="card-body">
+                <form id="cinemaForm">
+                    <input type="text" id="id" hidden>
+
+                    <label for="cinemaName">Cinema Name:</label>
+                    <input type="text" id="cinemaName" name="cinemaName" required>
+
+                    <label for="cinemaEmail">Enter your Email:</label>
+                    <input type="email" id="cinemaEmail" name="cinemaEmail" required>
+
+                    <label for="phone-number">Enter your Phone Number:</label>
+                    <input type="number" id="phone-number" name="phone-number" required>
+
+                    <label for="address">Enter your Address:</label>
+                    <input type="text" id="address" name="address" >
+
+                    <label for="cinemaImage">Cinema Image:</label>
+                    <input onchange="handleImg()" type="file" id="cinemaImage" name="cinemaImage" required>
+                    <img src="" alt="" id="imageCinema" width="100px" height="100px" border="1px solid black">
+
+                    <select name="status" id="status">
+                        <option value="0">--Select Status--</option>
+                        <option value="panding">panding</option>
+                        <option value="active">active</option>
+                    </select>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="disp">
+
+        </div>
+    </div>
+
+    <script src="/assets/js/adminCinema.js"></script>
+</body>
+
+</html>

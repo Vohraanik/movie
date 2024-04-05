@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/seat-Movie.css" />
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+
+  <!--- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Fontawesome Link for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  />
+  <title>Movie Seat Booking</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href=""><img src="./assets/image/movie-img/logo.svg" alt="" /></a>
+      </div>
+      <ul class="nav-list">
+        <div class="logo">
+          <a href=""><img src="./assets/image/movie-img/logo.svg" alt=""></a>
+          <button class="close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <li class="home"><a href="./index.html">home</a></li>
+        <li><a href="./movie-detail.html">Movie</a></li>
+        <li><a href="./cinema-movie.html">Cinema</a></li>
+        <li><a href="./time-detail.html">Time</a></li>
+        <li><a href="./Movie-seat.html">Seat</a></li>
+        <li><a href="./register.html">Register</a></li>
+        <li><a href="./login.html">Log in</a></li>
+
+      </ul>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="sheat">
+ <div class="contant">
+  <ul class="showcase">
+    <li>
+      <div class="seat"></div> 
+      <small>N/A</small>
+    </li>
+    <li>
+      <div class="seat selected"></div>
+      <small>Selected</small>
+    </li>
+    <li>
+      <div class="seat occupied"></div>
+      <small>Occupied</small>
+    </li>
+  </ul>
+  <div class="container">
+  <form action="" id="handleSumbit">
+    <div id="screen"></div>
+    <input class="btn btn-secondary mx-auto" type="submit" name="submit" value="Confirm Booking" id="submit">
+
+  </form>
+  
+  
+
+  </div>
+  <p class="text">You have selected <span id="count">0</span> seats
+    <p class="text">Amount:<span id="price">0</span></p>
+  </p>
+
+ </div>
+  </section>
+
+  <footer>
+    <div class="main">
+      <div class="footer-top">
+        <nav>
+          <div class="logo">
+            <img src="./assets/image/movie-img/logo.svg" alt="">
+          </div>
+          <ul class="list">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./movie-detail.html">movie</a></li>
+            <li><a href="./time-detail.html">time</a></li>
+            <li><a href="./Movie-seat.html">seat</a></li>
+          </ul>
+        </nav>
+        <hr>
+        <div class="links">
+          <div class="text-links">
+            <a href="">faq</a>
+            <a href="">help center</a>
+            <a href="">terms of use</a>
+            <a href="">privacy</a>
+          </div>
+          <div class="social-links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&#169; 2022 <a href="">pawantech12</a>. All Rights Reserved</p>
+        </div>
+        <div class="img">
+          <img src="./assets/image/movie-img/footer-bottom-img.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/movie-seat.js"></script>
+  <!-- <script src="./assets/js/script.js"></script> -->
+  <script src="./assets/js/navbar.js"></script>
+</body>
+
+</html>
